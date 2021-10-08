@@ -1,7 +1,7 @@
 # Helping Beep find his spare battery
 # Nested IF statements
 
-print("I need my spare battery, wWhere should I look?")
+print("I need my spare battery, where should I look?")
 look_room = str(input(">").lower())
 
 # Checking the bedroom
