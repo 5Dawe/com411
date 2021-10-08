@@ -18,4 +18,7 @@ bmi = weight/(height**2)
 limitedbmi = "{:.2f}".format(bmi)
 
 # Calculate BMI and print
-print(f"\n{name} you are {age} and your BMI is {bmi}")
+print(f"\n{name} you are {age} and your BMI is {limitedbmi}")
+#print(f"\n{bmi}")
+#print(f"\n{limitedbmi}")
+
