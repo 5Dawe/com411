@@ -1,10 +1,15 @@
-# A program to help Beep and Bop climb the ladder.
+# A program to help Beep and Bop climb the ladder with display.
 
-def climb_ladder(steps_to_go, steps_crossed):
-    if steps_to_go > steps_crossed :
-        print(f"Still some way to go!")
-    else:
-        print(f"We are almost there!")
+def display_ladder(steps):
+    for count in range(0, steps, 1):
+        print(f"|   |")
+        print(f"*****")
+    print(f"|   |")
 
-climb_ladder(5, 2)
-climb_ladder(2, 5)
+def climb_ladder():
+    print(f"How many steps remain?")
+    steps_remain = int(input())
+    print()
+    display_ladder(steps_remain)
+
+climb_ladder()
