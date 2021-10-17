@@ -11,7 +11,6 @@ import basics.functions.return_values as return_values
 import basics.functions.simple_function as simple_function
 import basics.input.ascii_robot as ascii_robot
 import basics.input.data_types as data_types
-import basics.input.multiline_message as multiline_message
 import basics.input.string_operators as string_operators
 import basics.input.user_input as user_input
 import basics.modules.guess_the_number as guess_the_number
@@ -27,6 +26,26 @@ import basics.simple_decision.if_ as if_
 import basics.simple_decision.if_elif_else as if_elif_else
 import basics.simple_decision.if_else as if_else
 import basics.simple_decision.Modulo_operator as modulo_operator
+import basics.repetitions.for_loop.simple as simple
+import basics.repetitions.for_loop.range as range
+import basics.repetitions.for_loop.characters as characters
+import basics.repetitions.for_loop.Reverse as reverse
+import basics.repetitions.for_loop.count_down as count_down
+import basics.repetitions.nested_loop.nested as nested
+import basics.repetitions.nested_loop.nesting as nesting
+import basics.repetitions.while_loop.len as len
+import basics.repetitions.while_loop.simple as simple
+import basics.repetitions.while_loop.ascii
+import basics.repetitions.while_loop.count
+import basics.repetitions.while_loop.factorial
+import basics.repetitions.while_loop.sum_100
+import basics.repetitions.while_loop.sum_user_numbers
+
+
+
+
+
+
 
 
 def run_block_a():
