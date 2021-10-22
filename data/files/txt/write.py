@@ -8,28 +8,19 @@ def search(f_path):
     file = open(f_path)
     for line in file:
         if line.startswith("Section"):
-            print(f"sec")
             sections = sections + "\n" + line
         else:
-            print(f"book")
             books = books + "\n" + line
     file.close
-    print(f"{sections}")
-    print(f"{books}")
-
-
-
-
-
-
-
+    #print(f"{sections}\n\n{books}")
+    ret_search = {sections}
+    return ret_search
 
 
 #define function to save
-
-
-
-
+def save(f_path, to_store):
+    print(f"{ret_search}")
+    print(f"Done!")
 
 #define a function to run
 def run():
