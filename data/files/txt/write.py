@@ -11,20 +11,27 @@ def search(f_path):
             sections = sections + "\n" + line
         else:
             books = books + "\n" + line
-    file.close
+    #file.close
     #print(f"{sections}\n\n{books}")
     ret_search = {sections}
+    print(f"{ret_search}")
     return ret_search
 
 
 #define function to save
 def save(f_path, to_store):
-    print(f"{ret_search}")
+    print(f"Saving...")
+    print(f"{f_path}   {to_store}")
+    with open(f_path, "w") as file:
+        file.write(to_store)
     print(f"Done!")
+
 
 #define a function to run
 def run():
-    search("books.txt")
+    search_return = (search("books.txt"))
+    print(f"{search_return}")
+    save("section-books.txt", search_return)
 
 
 if __name__ == "__main__":
