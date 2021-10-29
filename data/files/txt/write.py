@@ -23,7 +23,7 @@ def save(f_path, to_store):
     print(f"Saving...")
     print(f"{f_path}   {to_store}")
     with open(f_path, "w") as file:
-        file.write(to_store)
+        file.write(str(to_store))
     print(f"Done!")
 
 
