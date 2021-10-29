@@ -13,7 +13,8 @@ def search(f_path):
             books = books + "\n" + line
     #file.close
     #print(f"{sections}\n\n{books}")
-    ret_search = {sections}
+    #you need a f for the formatted string
+    ret_search = f"{sections}\n\n{books}"
     print(f"{ret_search}")
     return ret_search
 

@@ -16,9 +16,13 @@ def open_bots():
 
     for bot in bots:
       bot_name = bot["name"]
-      bot_strength = bot["strength"]
-      bot_speed = bot["speed"]
-      print(f"The name of the first bot is: {bot_name}{bot_strength}{bot_speed}")
+      #you need to call stats first before calling strength
+      bot_stats = bot["stats"]
+      bot_strength = bot_stats["strength"]
+      bot_speed = bot_stats["speed"]
+
+      print(f"{bot_name} has a strength level of {bot_strength} and a speed level of {bot_speed}")
+      #print(f"The name of the first bot is: {bot_name}{bot_strength}{bot_speed}")
 
 
 def run():
