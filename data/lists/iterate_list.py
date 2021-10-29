@@ -5,6 +5,7 @@ def directions():
     directions = ["Move Forward", "Move Backward", "Turn Left", "Turn Right"]
     return directions
 
+
 def menu():
     print(f"\nPlease enter a direction:")
     loc_var = directions()
@@ -13,6 +14,7 @@ def menu():
     user_input = int(input())
     user_choice = loc_var[user_input]
     return user_choice
+
 
 def run():
     route = []
