@@ -28,9 +28,17 @@ def display_menu():
     print(f"[3] Display the number of passengers by gender")
     print(f"[4] Display the number of passengers by age group")
     print("")
-    choose = int(input())
+    #choose = int(input())
+    choose = 1
     return choose
 
+
+# function for option 1: displaying passenger names
+def display_passenger_names():
+    print(f"\nThe names of the passengers are...")
+    for values in records:
+        passenger_name = values[3]
+        print(f"{passenger_name}")
 
 
 def run():
@@ -39,7 +47,10 @@ def run():
     print(f"\nSuccessfully loaded {num_records} records.")
     selected_option = display_menu()
     print(f"You have selected option {selected_option}")
-
+    if selected_option == 1:
+        display_passenger_names()
+    else:
+        print(f"Sorry, option not recognised!")
 
 if __name__ == "__main__":
     run()
