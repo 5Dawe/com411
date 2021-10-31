@@ -29,7 +29,7 @@ def display_menu():
     print(f"[4] Display the number of passengers by age group")
     print("")
     #choose = int(input())
-    choose = 1
+    choose = 2
     return choose
 
 
@@ -41,6 +41,21 @@ def display_passenger_names():
         print(f"{passenger_name}")
 
 
+# function for option 2: number of survivors
+def display_num_survivors():
+    num_survived = 0
+    for values in records:
+        survival_status = int(values[1])
+        if survival_status == 1:
+            num_survived = num_survived + 1
+    print(f"\n{num_survived} passengers survived.")
+
+
+
+
+
+
+# function to run the program and action user selection
 def run():
     load_data("titanic.csv")
     num_records = len(records)
@@ -49,6 +64,8 @@ def run():
     print(f"You have selected option {selected_option}")
     if selected_option == 1:
         display_passenger_names()
+    elif selected_option == 2:
+        display_num_survivors()
     else:
         print(f"Sorry, option not recognised!")
 
