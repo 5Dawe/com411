@@ -29,7 +29,7 @@ def display_menu():
     print(f"[4] Display the number of passengers by age group")
     print("")
     #choose = int(input())
-    choose = 2
+    choose = 3
     return choose
 
 
@@ -50,7 +50,20 @@ def display_num_survivors():
             num_survived = num_survived + 1
     print(f"\n{num_survived} passengers survived.")
 
-
+# function for option 3: number of passengers by gender
+def display_passengers_by_gender():
+    females = 0
+    males = 0
+    other = 0
+    for values in records:
+        gender = str.lower(values[4])
+        if gender == "male":
+            males = males + 1
+        elif gender == "female":
+            females = females + 1
+        else:
+            other = other + 1
+    print(f"Males: {males}, Females: {females}.")
 
 
 
@@ -66,6 +79,8 @@ def run():
         display_passenger_names()
     elif selected_option == 2:
         display_num_survivors()
+    elif selected_option == 3:
+        display_passengers_by_gender()
     else:
         print(f"Sorry, option not recognised!")
 
