@@ -37,6 +37,5 @@ def run():
     display_items(pattern())
 
 
-
 if __name__ == "__main__":
     run()
