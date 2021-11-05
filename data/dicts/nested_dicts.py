@@ -17,6 +17,7 @@ def long_pattern():
     return pattern
 
 
+
 def run():
     print(f"Analysing patterns...")
     sequences = {}

@@ -40,7 +40,7 @@ def display_medal_tally(tally):
 
 # The function should display the name of each team and the medals
 # the team has one.
-def display_medal_tally(team_tally):
+def display_team_medal_tally(team_tally):
     print(f"{team_tally}")
 
 
