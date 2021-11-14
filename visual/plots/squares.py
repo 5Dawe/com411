@@ -29,7 +29,7 @@ def large():
 
 # run the program to display the plots
 def run():
-    small()
+    small()d
     medium()
     large()
     plt.show()
