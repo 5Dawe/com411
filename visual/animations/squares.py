@@ -30,7 +30,7 @@ def animate(frame):
 # Function to run
 def run():
     global fig
-    squares_animation = animation.FuncAnimation(fig, animate, frames=3, interval=1000, init_func = init)
+    squares_animation = animation.FuncAnimation(fig, animate, frames=3, interval=1000, init_func=init, repeat=True)
     plt.show()
 
 
