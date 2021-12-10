@@ -7,7 +7,7 @@ import tui
 
 
 def read_data(file_path):
-    tui.started(f"Reading data from {file_path}")
+    tu2i.started(f"Reading data from {file_path}")
     data = []
     with open(file_path) as file:
         csv_reader = csv.reader(file)
